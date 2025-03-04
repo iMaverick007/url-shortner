@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "next.config.js",
+      "use": "@vercel/next"
+    }
+  ],
+  "env": {
+    "MONGODB_URI": "@mongodb_uri",
+    "NEXT_PUBLIC_HOST": "@next_public_host"
+  }
+}
