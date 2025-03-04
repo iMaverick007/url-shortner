@@ -26,7 +26,7 @@ const Navbar = () => {
               Try Now
             </button>
           </Link>
-          <a href="https://github.com/your-repo/url-shortner" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/iMaverick007/url-shortner" target="_blank" rel="noopener noreferrer">
             <button className="bg-purple-500 rounded-lg shadow-lg p-3 py-1 font-bold">
               Github
             </button>
