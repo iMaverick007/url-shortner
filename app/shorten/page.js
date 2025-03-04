@@ -24,7 +24,12 @@ const Shorten = () => {
     };
 
     fetch("/api/generate", requestOptions)
-      .then((response) => response.json())
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.json();
+      })
       .then((result) => {
         seturl("");
         setshorturl("");
@@ -33,7 +38,10 @@ const Shorten = () => {
         console.log(result);
         alert(result.message);
       })
-      .catch((error) => console.error(error));
+      .catch((error) => {
+        console.error("Error:", error);
+        alert("An error occurred while generating the URL. Please try again.");
+      });
   };
 
   return (
