@@ -5,4 +5,3 @@
 - React
 - Tailwind CSS
 - MongoDB
-- Vercel (for deployment)
